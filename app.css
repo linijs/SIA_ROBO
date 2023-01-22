@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+:root {
+    --Black: #222222;
+    --White: #f3efe0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    background: none;
+}
+
+/* ******************** */
+/* CARD MAIN */
+/* ******************** */
+
+body {
+    background-color: #434242;
+}
+
+::selection {
+    color: var(--White);
+    background: var(--Black);
+}
+
+.robo-table {
+    border-collapse: collapse;
+    width: 100em;
+    background-color: var(--White);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.15);
+    margin: 25px auto;
+    margin-top: 50px;
+    text-align: center;
+    transition: 0.7s ease;
+}
+
+/* ******************** */
+/* CARD HEADER */
+/* ******************** */
+
+.robo-table thead {
+    height: 10em;
+    transition: 0.7s ease;
+}
+
+.robo-table thead tr td {
+    width: 70em;
+}
+
+.robo-table thead tr td:nth-of-type(odd) {
+    width: 15em;
+}
+
+.robo-table thead tr td {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 16px;
+}
+
+.robo-table thead tr td h1 {
+    font-size: 5em;
+    text-align: left;
+    color: var(--Black);
+}
+
+.virsraksts-table-data {
+    border-bottom: 1px solid var(--Black);
+}
+
+.pulkstenis-table-data {
+    border-left: 1.5px solid var(--Black);
+    border-bottom: 1px solid var(--Black);
+}
+
+/* ******************** */
+/* CARD HEADER LOGO */
+/* ******************** */
+
+.logo {
+    width: 80px;
+    height: 49px;
+    margin-top: 5px;
+    transition: 0.7s ease;
+    filter: invert(89%) sepia(4%) saturate(1131%) hue-rotate(334deg)
+        brightness(112%) contrast(91%);
+}
+
+.logotips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid var(--White);
+}
+
+.logotips p {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.logo-table-data {
+    background: var(--Black);
+    height: 5em;
+    border-radius: 10px 0 0 0;
+    border-bottom: 1px solid var(--White);
+}
+
+/* ******************** */
+/* CARD BODY */
+/* ******************** */
+
+.robo-table tbody tr td {
+    height: 30px;
+}
+
+.bilde {
+    width: 93%;
+    margin: 35px;
+    border-radius: 10px;
+    border: 2px solid var(--Black);
+    max-height: 500px;
+    transition: 0.7s ease;
+    /* box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.mape {
+    filter: invert(90%);
+    /* filter: grayscale(100%) invert(92%) contrast(83%); */
+    border-radius: 10px;
+}
+
+/* ******************** */
+/* CARD BODY NAV */
+/* ******************** */
+
+.nav-table-data {
+    background: var(--Black);
+    border-right: 1px solid var(--Black);
+}
+
+.robo-table tbody tr td ul li a {
+    display: block;
+    color: var(--White);
+    padding: 45px 16px;
+    text-decoration: none;
+    background: var(--Black);
+    transition: 0.7s ease;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1.5px solid var(--White);
+    font-weight: bold;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li.active {
+    background-color: #22a39f;
+    color: var(--Black);
+    padding: 45px 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--White);
+    color: var(--Black);
+}
+
+.active:hover {
+    text-decoration: none;
+    cursor: default;
+    border-left: 1px solid var(--Black);
+}
+
+.robo-table tbody tr td ul li a:focus {
+    background: #22a39f;
+    color: var(--Black);
+}
+
+/* ******************** */
+/* CARD BODY REKLĀMA */
+/* ******************** */
+
+.add-table-data {
+    border-left: 1px solid var(--Black);
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.add {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--Black);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid var(--Black);
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.add-saites {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid var(--Black);
+    margin: 15px 10px 20px 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vertical-scrolling-text a:hover {
+    font-weight: bold;
+}
+
+/* ******************** */
+/* REKLĀMAS SCROLLING */
+/* ******************** */
+
+.vertical-scrolling-text {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding-left: 10px;
+
+    /* animation properties */
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+
+    -moz-animation: my-animation 8s linear infinite;
+    -webkit-animation: my-animation 8s linear infinite;
+    animation: my-animation 8s linear infinite;
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+    to {
+        -webkit-transform: translateY(100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-10%); /* changes the start spawn */
+    }
+    to {
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(
+            10%
+        ); /* changes the end spawn and speed because of container size */
+    }
+}
+
+/* ******************** */
+/* CARD FOOTER */
+/* ******************** */
+
+.robo-table tfoot tr td {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 16px;
+}
+
+/* ******************** */
+/* CARD FOOTER CIRCLES */
+/* ******************** */
+
+.circle-table-data {
+    background: var(--Black);
+    border-top: 1.5px solid var(--White);
+    border-radius: 0 0 0 10px;
+}
+
+.dot {
+    background: transparent;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+}
+
+/* ******************** */
+/* CARD FOOTER SCROLLING */
+/* ******************** */
+
+.scrolling-table-data {
+    display: flex;
+    justify-content: center;
+}
+
+div.scrolling-limit {
+    width: 800px;
+    height: 30px;
+    background-color: var(--Black);
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+div.scrolling {
+    color: var(--White);
+    position: relative;
+    -webkit-animation: scroll 20s infinite linear;
+    -moz-animation: scroll 20s infinite linear;
+    -o-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+    padding-top: 3px;
+}
+
+@keyframes scroll {
+    0% {
+        left: 10px;
+    }
+    100% {
+        left: -788px;
+    }
+}
+@-webkit-keyframes scroll {
+    0% {
+        left: 10px;
+    }
+    100% {
+        left: -788px;
+    }
+}
+
+/* ******************** */
+/* CARD FOOTER ADDRESS */
+/* ******************** */
+
+.robo-table tfoot tr td address {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    transition: 0.7s ease;
+}
+
+.robo-table tfoot tr td address a:hover {
+    font-weight: bold;
+}
+
+.address-table-data {
+    border-left: 1.5px solid var(--Black);
+    border-top: 1px solid var(--Black);
+}
+
+/* ******************** */
+/* REKLAMA */
+/* ******************** */
+
+.img-slide {
+    max-width: 100%;
+    max-height: 100%;
+    /* opacity: 0.8; */
+    transition: 0.7s ease;
+}
+
+.img-slide:hover {
+    max-width: 105%;
+    /* opacity: 1; */
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+    transition: 0.7s ease;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
